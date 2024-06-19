@@ -14,10 +14,22 @@
 ## GraphDB
 - Run GraphDB
 - Create a new repository
-- 
+- Import the OpenFlat TTL
+- Run a SPARQL query
 
-## SPARQL-visualizer
+## Comunica
+- [Comunica web client with the OpenFlat](https://query.comunica.dev/#datasources=https%3A%2F%2Fraw.githubusercontent.com%2FAlexDonkers%2Fofo%2Fmain%2FSWJ_Resources%2FOpenFlat%2FOpenFlat_Donkers.ttl&query=PREFIX%20bot%3A%20%3Chttps%3A%2F%2Fw3id.org%2Fbot%23%3E%0Aselect%20*%20where%20%7B%0A%20%20%20%20%3Fs%20%3Fp%20bot%3ABuilding%20.%0A%7D%20limit%20100)
+- [Comunica web client with the OpenFlat and the OpenSmartHome](https://query.comunica.dev/#datasources=https%3A%2F%2Fraw.githubusercontent.com%2FAlexDonkers%2Fofo%2Fmain%2FSWJ_Resources%2FOpenFlat%2FOpenFlat_Donkers.ttl;https%3A%2F%2Fraw.githubusercontent.com%2FAlexDonkers%2FOpenSmartHome%2Fmain%2FopenSmartHome_Donkers.ttl&query=PREFIX%20bot%3A%20%3Chttps%3A%2F%2Fw3id.org%2Fbot%23%3E%0Aselect%20*%20where%20%7B%0A%20%20%20%20%3Fs%20%3Fp%20bot%3ABuilding%20.%0A%7D%20limit%20100)
+
+## Frontend tools
+- [LD-BIM](https://ld-bim.web.app/)
+- [LBDviz](https://alexdonkers.github.io/LBDviz/dist/)
 - [SPARQL-visualizer](https://madsholten.github.io/sparql-visualizer/)
+
+## Python-based graph interactions
+- [01_Check python version](https://colab.research.google.com/github/AlexDonkers/RUB-IIB-Workshops-2024/blob/main/01_CheckPythonInstallation.ipynb)
+- [02_RDFlib](https://colab.research.google.com/github/AlexDonkers/RUB-IIB-Workshops-2024/blob/main/02_RDFlib.ipynb)
+- [03_SPARQLWrapper](https://colab.research.google.com/github/AlexDonkers/RUB-IIB-Workshops-2024/blob/main/03_SPARQLWrapper.ipynb)
 
 ## LBDviz
 - [LBDviz](https://alexdonkers.github.io/LBDviz/dist/)
