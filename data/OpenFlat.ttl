@@ -1,0 +1,958 @@
+## This is the OpenFlat, an initiative by Alex Donkers. 
+## The OpenFlat can be used by researchers. More data is available on http://github.com/AlexDonkers/OpenFlat.
+## While the exact location cannot be shared due to GDPR-regulations, it is located in The Netherlands. Therefore, researchers can use average Dutch climate data.
+## 
+
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# PREFIXES
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+@prefix OF:   	<http://github.com/AlexDonkers/OpenFlat#> .
+
+@prefix bop:   	<https://w3id.org/bop#> .							# Building Performance Ontology
+@prefix bpt:   	<https://w3id.org/bpt#> .							# Building Property Taxonomy
+@prefix bot:   	<https://w3id.org/bot#> .							# Building Topology Ontology
+@prefix beo:   	<http://pi.pauwel.be/voc/buildingelement#> .		# Building Element Ontology
+@prefix mep:   	<http://pi.pauwel.be/voc/distributionelement#> .	# Distribution Elenemt Ontology
+@prefix geo:   	<http://www.opengis.net/ont/geosparql#> .			# GeoSPARQL
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .		# QUDT Quantity Kind ontology
+
+@prefix owl:   	<http://www.w3.org/2002/07/owl#> .					# Web Ontology Language
+@prefix rdf:   	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .		# Resource Description Framework
+@prefix rdfs:  	<http://www.w3.org/2000/01/rdf-schema#> .			# RDF Schema
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# SITE
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:OpenFlatSite
+        a                         	geo:Feature , bot:Site , bop:FeatureOfInterest ;
+		
+        bot:hasBuilding				OF:building_413b2296-9449-4a05-8f3c-f009b9f294dc ;
+		
+		bpt:hasGUID					"413b2296-9449-4a05-8f3c-f009b9f294df" ;
+		bpt:hasGlobalIdIfcRoot		"11EoAMb4bA1Oyyy0cvyfJV" ;
+		bpt:hasName					"OpenFlatSite" ;
+		bpt:hasElevation			"0" .
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# BUILDING
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:OpenFlat
+        a                      	bot:Building , bop:FeatureOfInterest ;
+		
+        bot:hasStorey          	OF:Level4 , OF:Level5 ;
+        
+		bpt:hasGUID				"413b2296-9449-4a05-8f3c-f009b9f294dc" ;
+		bpt:hasGlobalIdIfcRoot	"11EoAMb4bA1Oyyy0cvyfJS" ;
+		bpt:hasName				"OpenFlat" .
+		
+		
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# LEVELS
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:Level4
+        a                         	 bot:Storey , bop:FeatureOfInterest ;
+		
+        bot:containsElement        	OF:door_61646be3-03b9-4e10-b7f8-e8a8968e77bd , OF:wall_f27649ff-6b90-4736-ab52-98da77a1272d , OF:window_f27649ff-6b90-4736-ab52-98da77a101d5 , OF:door_f27649ff-6b90-4736-ab52-98da77a13911 , OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f49778 , OF:door_f27649ff-6b90-4736-ab52-98da77a13e77 , OF:wall_f27649ff-6b90-4736-ab52-98da77a13868 , OF:window_f27649ff-6b90-4736-ab52-98da77a1053d , OF:wall_f27649ff-6b90-4736-ab52-98da77a1355f , OF:wall_f27649ff-6b90-4736-ab52-98da77a13351 , OF:wall_f27649ff-6b90-4736-ab52-98da77a13dc5 , OF:window_f27649ff-6b90-4736-ab52-98da77a13fe7 , OF:window_f27649ff-6b90-4736-ab52-98da77a106ad , OF:slab_f27649ff-6b90-4736-ab52-98da77a13d7f , OF:window_f27649ff-6b90-4736-ab52-98da77a10348 , OF:wall_f27649ff-6b90-4736-ab52-98da77a13397 , OF:door_f27649ff-6b90-4736-ab52-98da77a102c3 , OF:wall_f27649ff-6b90-4736-ab52-98da77a12828 , OF:railing_f27649ff-6b90-4736-ab52-98da77a13990 , OF:wall_f27649ff-6b90-4736-ab52-98da77a12bfa , OF:wall_f27649ff-6b90-4736-ab52-98da77a1379c , OF:covering_61646be3-03b9-4e10-b7f8-e8a8968e744e , OF:window_f27649ff-6b90-4736-ab52-98da77a10020 , OF:wall_f27649ff-6b90-4736-ab52-98da77a13770 , OF:wall_f27649ff-6b90-4736-ab52-98da77a1320e , OF:window_f27649ff-6b90-4736-ab52-98da77a10075 , OF:wall_f27649ff-6b90-4736-ab52-98da77a13702 , OF:window_f27649ff-6b90-4736-ab52-98da77a10428 , OF:door_f27649ff-6b90-4736-ab52-98da77a13a9b , OF:wall_f27649ff-6b90-4736-ab52-98da77a13832 , OF:door_f27649ff-6b90-4736-ab52-98da77a13af5 , OF:wall_f27649ff-6b90-4736-ab52-98da77a12df4 , OF:door_61646be3-03b9-4e10-b7f8-e8a8968e7656 , OF:wall_f27649ff-6b90-4736-ab52-98da77a13295 ;
+        bot:hasSpace              	OF:Study , OF:Toilet , OF:Bedroom , OF:LivingRoom , OF:StorageRoom , OF:Bathroom ;
+
+		bpt:hasGUID					"413b2296-9449-4a05-8f3c-f00946082da8" ;
+		bpt:hasGlobalIdIfcRoot		"11EoAMb4bA1Oyyy0b622se" ;
+		bpt:hasName					"Level 4" ;
+		bpt:hasElevation			"9." .
+
+OF:Level5
+        a                         	bot:Storey , bop:FeatureOfInterest ;
+		
+        bot:containsElement        	OF:roof_d576136d-a0bf-4ebc-8644-d1110b3a9274 ;
+
+		bpt:hasGUID					"413b2296-9449-4a05-8f3c-f00946082c36" ;
+		bpt:hasGlobalIdIfcRoot		"11EoAMb4bA1Oyyy0b622ms" ; 
+		bpt:hasName					"Level 5" ;
+		bpt:hasElevation			"12000." .
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# SPACES
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:Study
+        a                      	bot:Space , bop:FeatureOfInterest ;
+		
+        bot:containsElement    	OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4e493 , OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4e4dd ;
+        
+		bpt:hasGUID				"f27649ff-6b90-4736-ab52-98da77a13e0c" ;
+		bpt:hasGlobalIdIfcRoot	"3oTad$Qv17DgjIcDfteJuC" ;
+		bpt:hasName				"Study" ;
+		
+		bot:adjacentElement		OF:wall_f27649ff-6b90-4736-ab52-98da77a1320e ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a1272d ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13295 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13351 .
+
+OF:Toilet
+        a                      	bot:Space , bop:FeatureOfInterest ;
+		
+        bot:containsElement    	OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4c506 ;
+		
+		bpt:hasGUID				"f27649ff-6b90-4736-ab52-98da77a13e28" ;
+		bpt:hasGlobalIdIfcRoot	"3oTad$Qv17DgjIcDfteJue" ;
+		bpt:hasName				"Toilet" ;
+		bot:adjacentElement		OF:wall_f27649ff-6b90-4736-ab52-98da77a13770 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13351 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a1379c ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13702 .
+
+OF:Bedroom
+        a                      	bot:Space , bop:FeatureOfInterest ;
+		
+        bot:containsElement    	OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4e568 , OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4f233 ;
+		
+		bpt:hasGUID				"f27649ff-6b90-4736-ab52-98da77a13e11" ;
+		bpt:hasGlobalIdIfcRoot	"3oTad$Qv17DgjIcDfteJuH" ;
+		bpt:hasName				"Bedroom" ;
+		bot:adjacentElement		OF:wall_f27649ff-6b90-4736-ab52-98da77a1272d ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13295 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13351 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13702 .       
+
+OF:LivingRoom
+        a                      	bot:Space , bop:FeatureOfInterest ;
+		
+        bot:containsElement    	OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4bca1 , OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f48317 , OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4e263 , OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4f150 , OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4f320 ;
+        
+		bpt:hasGUID				"f27649ff-6b90-4736-ab52-98da77a13e17" ;
+		bpt:hasGlobalIdIfcRoot	"3oTad$Qv17DgjIcDfteJuN" ;
+		bpt:hasName				"LivingRoom" ;
+		
+		bot:hasElement			OF:KitchenTable ;
+		bot:adjacentElement		OF:wall_f27649ff-6b90-4736-ab52-98da77a12df4 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a12828 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13770 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a12bfa ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13832 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13397 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a1272d ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13868 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a1355f ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13351 .
+		
+OF:StorageRoom
+        a                      	bot:Space , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID				"f27649ff-6b90-4736-ab52-98da77a13e12" ;
+		bpt:hasGlobalIdIfcRoot	"3oTad$Qv17DgjIcDfteJuI" ;
+		bpt:hasName				"StorageRoom" ;
+		bot:adjacentElement		OF:wall_f27649ff-6b90-4736-ab52-98da77a13dc5 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a1320e ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13397 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a1272d .
+
+OF:Bathroom
+        a                      	bot:Space , bop:FeatureOfInterest ;
+		
+		bot:containsElement    	OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4f2fc , OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4c5fb ;
+
+		bpt:hasGUID				"f27649ff-6b90-4736-ab52-98da77a13e0b" ;
+		bpt:hasGlobalIdIfcRoot	"3oTad$Qv17DgjIcDfteJuB" ;
+		bpt:hasName				"Bathroom" ;
+		
+		bot:adjacentElement		OF:wall_f27649ff-6b90-4736-ab52-98da77a13dc5 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a1320e ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13397 ,
+								OF:wall_f27649ff-6b90-4736-ab52-98da77a13351 .  
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# FURNITURE
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+### Furniture has not been modeled in Revit and therefore has no GUID or other references to geometrical elements.
+
+OF:KitchenTable
+		a 						bot:Element , bop:FeatureOfInterest , bop:Platform ;
+		bop:hosts				OF:SeeedGroveAirQualitySensorV1_3 , OF:SeeedTemperatureAndHumiditySensorDHT11 .
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# WALLS
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:wall_f27649ff-6b90-4736-ab52-98da77a12828
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+        bot:hasSubElement          	OF:window_f27649ff-6b90-4736-ab52-98da77a10348 , OF:window_f27649ff-6b90-4736-ab52-98da77a10428 ;
+        	
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a12828" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteIWe" ;
+		bpt:hasBatID				"346281" ;
+		
+		bpt:isExterior				"True" ;
+		bpt:hasLength				"3480" ;
+		bpt:hasThickness			"300" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"4.5" ; 
+		bpt:hasSolarAzimuth			"90" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a12df4
+        a                         	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+        bot:hasSubElement          	OF:door_f27649ff-6b90-4736-ab52-98da77a13e77 , OF:window_f27649ff-6b90-4736-ab52-98da77a13fe7 ;
+        
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a12df4" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteItq" ;
+		bpt:hasBatID				"347509" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"7580" ;
+		bpt:hasThickness			"200" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+
+OF:wall_f27649ff-6b90-4736-ab52-98da77a13dc5
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13dc5" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJt5" ;
+		bpt:hasBatID				"351556" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"2000" ;
+		bpt:hasThickness			"300" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a13770
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+        bot:hasSubElement          	OF:door_61646be3-03b9-4e10-b7f8-e8a8968e7656 ;
+        
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13770" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJTm" ;
+		bpt:hasBatID				"350193" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"1600" ;
+		bpt:hasThickness			"100" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a12bfa
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a12bfa" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteIlw" ;
+		bpt:hasBatID				"347003" ;
+		
+		bpt:isExterior				"True" ;	
+		bpt:hasLength				"3400" ;
+		bpt:hasThickness			"300" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"4.5" ; 
+		bpt:hasSolarAzimuth			"0" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a1320e
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a1320e" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJ8E" ;
+		bpt:hasBatID				"348815" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"4330" ;
+		bpt:hasThickness			"100" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a13832
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+        bot:hasSubElement          	OF:window_f27649ff-6b90-4736-ab52-98da77a101d5 , OF:door_f27649ff-6b90-4736-ab52-98da77a102c3 ;
+        		
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13832" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJWo" ;
+		bpt:hasBatID				"350387" ;
+		
+		bpt:isExterior				"True" ;
+		bpt:hasLength				"2400" ;
+		bpt:hasThickness			"100" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"4.5" ; 
+		bpt:hasSolarAzimuth			"90" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a13397
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+        bot:hasSubElement          	OF:door_61646be3-03b9-4e10-b7f8-e8a8968e77bd ;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13397" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJEN" ;
+		bpt:hasBatID				"348950" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"4330" ;
+		bpt:hasThickness			"100" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+        
+OF:wall_f27649ff-6b90-4736-ab52-98da77a1272d
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+        bot:hasSubElement          	OF:window_f27649ff-6b90-4736-ab52-98da77a106ad , OF:window_f27649ff-6b90-4736-ab52-98da77a1053d ;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a1272d" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteISj" ;
+		bpt:hasBatID				"346028" ;
+		
+		bpt:isExterior				"True" ;
+		bpt:hasLength				"13450" ;
+		bpt:hasThickness			"300" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"4.5" ; 
+		bpt:hasSolarAzimuth			"0" .
+
+OF:wall_f27649ff-6b90-4736-ab52-98da77a13295
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13295" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJAL" ;
+		bpt:hasBatID				"348692" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"4330" ;
+		bpt:hasThickness			"100" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a13868
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+        bot:hasSubElement          	OF:window_f27649ff-6b90-4736-ab52-98da77a10075 , OF:window_f27649ff-6b90-4736-ab52-98da77a10020 ;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13868" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJXe" ;
+		bpt:hasBatID				"350441" ;
+		
+		bpt:isExterior				"True" ;
+		bpt:hasLength				"3000" ;
+		bpt:hasThickness			"100" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"4.5" ; 
+		bpt:hasSolarAzimuth			"180" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a1355f
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a1355f" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJLV" ;
+		bpt:hasBatID				"349662" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"1570" ;
+		bpt:hasThickness			"500" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a13351
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		
+        bot:hasSubElement          	OF:door_f27649ff-6b90-4736-ab52-98da77a13af5 , OF:door_f27649ff-6b90-4736-ab52-98da77a13911 , OF:door_f27649ff-6b90-4736-ab52-98da77a13a9b ;
+        
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13351" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJDH" ;
+		bpt:hasBatID				"349136" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"6970" ;
+		bpt:hasThickness			"100" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a1379c
+        a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		        
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a1379c" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJUS" ;
+		bpt:hasBatID				"349981" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"1050" ;
+		bpt:hasThickness			"200" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"0.2" .
+		
+OF:wall_f27649ff-6b90-4736-ab52-98da77a13702
+		a                          	beo:Wall , bot:Element , bop:FeatureOfInterest ;
+		        
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13702" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJS2" ;
+		bpt:hasBatID				"350083" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"5930" ;
+		bpt:hasThickness			"200" ;			
+		bpt:hasHeight				"2595" ;
+		bpt:hasThermalResistance	"4.5" .
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# Doors
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:door_f27649ff-6b90-4736-ab52-98da77a13af5
+        a                           beo:Door , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13af5" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJhr" ;
+		bpt:hasBatID				"350836" ;
+		bpt:hasName					"BathroomDoor" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"950" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2300" ;
+		bpt:hasThermalResistance	"0.1" .
+
+OF:door_f27649ff-6b90-4736-ab52-98da77a13911
+        a                           beo:Door , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13911" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJaH" ;
+		bpt:hasBatID				"350608" ;
+		bpt:hasName					"BedroomDoor" ;
+		
+		bpt:isExterior				"False" ;
+		bpt:hasLength				"950" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2300" ;
+		bpt:hasThermalResistance	"0.1" .
+
+OF:door_f27649ff-6b90-4736-ab52-98da77a102c3
+        a                           beo:Door , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a102c3" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteGB3" ;
+		bpt:hasBatID				"352834" ;
+		bpt:hasName					"BalconyDoor" ;
+		
+		bpt:isExterior				"True" ;		
+		bpt:hasLength				"1100" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2600" ;
+		bpt:hasThermalResistance	"0.5" .
+
+		
+OF:door_f27649ff-6b90-4736-ab52-98da77a13a9b
+        a                           beo:Door , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13a9b" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJgR" ;
+		bpt:hasBatID				"350746" ;
+		bpt:hasName					"StudyDoor" ;
+		
+		bpt:isExterior				"False" ;	
+		bpt:hasLength				"950" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2300" ;
+		bpt:hasThermalResistance	"0.1"  .
+
+OF:door_61646be3-03b9-4e10-b7f8-e8a8968e77bd
+        a                           beo:Door , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"61646be3-03b9-4e10-b7f8-e8a8968e77bd" ;
+		bpt:hasGlobalIdIfcRoot		"1XP6lZ0xbE4BVuwAYMZdUz" ;
+		bpt:hasBatID				"364833" ;
+		bpt:hasName					"StorageRoomDoor" ;
+		
+		bpt:isExterior				"False" ;		
+		bpt:hasLength				"950" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2300" ;
+		bpt:hasThermalResistance	"0.1"  .
+
+OF:door_f27649ff-6b90-4736-ab52-98da77a13e77
+        a                           beo:Door , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13e77" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJvt" ;
+		bpt:hasBatID				"351990" ;
+		bpt:hasName					"DoorToSharedStaircase" ;
+		
+		bpt:isExterior				"False" ;		
+		bpt:hasLength				"950" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2300" ;
+		bpt:hasThermalResistance	"0.1"  .
+
+OF:door_61646be3-03b9-4e10-b7f8-e8a8968e7656
+        a                           beo:Door , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"61646be3-03b9-4e10-b7f8-e8a8968e7656" ;
+		bpt:hasGlobalIdIfcRoot		"1XP6lZ0xbE4BVuwAYMZdPM" ;
+		bpt:hasBatID				"364746" ;
+		bpt:hasName					"ToiletDoor" ;
+		
+		bpt:isExterior				"False" ;			
+		bpt:hasLength				"950" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2300" ;
+		bpt:hasThermalResistance	"0.1"  .
+
+		
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# WINDOWS
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:window_f27649ff-6b90-4736-ab52-98da77a10020
+        a                           beo:Window , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a10020" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteG0W" ;
+		bpt:hasBatID				"352417" ;
+		bpt:hasName					"BalconyWindow" ;
+		
+		bpt:isExterior				"True" ;		
+		bpt:hasLength				"1400" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2600" ;
+		bpt:hasThermalResistance	"0.5" .
+		
+OF:window_f27649ff-6b90-4736-ab52-98da77a1053d
+        a                           beo:Window , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a1053d" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteGKz" ;
+		bpt:hasBatID				"353724" ;
+		bpt:hasName					"StudyWindow" ;
+		
+		bpt:isExterior				"True" ;		
+		bpt:hasLength				"750" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2600" ;
+		bpt:hasThermalResistance	"0.5" .
+		
+OF:window_f27649ff-6b90-4736-ab52-98da77a106ad
+        a                           beo:Window , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a106ad" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteGQj" ;
+		bpt:hasBatID				"353836" ;
+		bpt:hasName					"BedroomWindow" ;
+		
+		bpt:isExterior				"True" ;		
+		bpt:hasLength				"750" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2600" ;
+		bpt:hasThermalResistance	"0.5" .
+	
+OF:window_f27649ff-6b90-4736-ab52-98da77a10075
+        a                           beo:Window , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a10075" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteG1r" ;
+		bpt:hasBatID				"352500" ;
+		bpt:hasName					"BalconyWindow" ;
+		
+		bpt:isExterior				"True" ;		
+		bpt:hasLength				"1400" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2600" ;
+		bpt:hasThermalResistance	"0.5" .
+
+OF:window_f27649ff-6b90-4736-ab52-98da77a10348
+        a                           beo:Window , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a10348" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteGD8" ;
+		bpt:hasBatID				"353225" ;
+		bpt:hasName					"LivingRoomWindow" ;
+		
+		bpt:isExterior				"True" ;		
+		bpt:hasLength				"750" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2600" ;
+		bpt:hasThermalResistance	"0.5" .
+
+OF:window_f27649ff-6b90-4736-ab52-98da77a101d5
+        a                           beo:Window , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a101d5" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteG7L" ;
+		bpt:hasBatID				"352596" ;
+		bpt:hasName					"BalconyWindow" ;
+		
+		bpt:isExterior				"True" ;		
+		bpt:hasLength				"1100" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2600" ;
+		bpt:hasThermalResistance	"0.5" .
+
+OF:window_f27649ff-6b90-4736-ab52-98da77a10428
+        a                           beo:Window , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a10428" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteGGe" ;
+		bpt:hasBatID				"353449" ;
+		bpt:hasName					"LivingRoomWindow" ;
+		
+		bpt:isExterior				"True" ;		
+		bpt:hasLength				"750" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2600" ;
+		bpt:hasThermalResistance	"0.5" .
+		
+OF:window_f27649ff-6b90-4736-ab52-98da77a13fe7
+        a                           beo:Window , bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13fe7" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJ$d" ;
+		bpt:hasBatID				"352102" ;
+		bpt:hasName					"HallWindow" ;
+		
+		bpt:isExterior				"False" ;		
+		bpt:hasLength				"200" ;
+		bpt:hasThickness			"51" ;			
+		bpt:hasHeight				"2210" ;
+		bpt:hasThermalResistance	"0.5" .
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# FLOOR SLABS
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:slab_d576136d-a0bf-4ebc-8644-d1130b3a9274
+        a                           beo:Slab , beo:Slab-ROOF, bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"d576136d-a0bf-4ebc-8644-d1130b3a9274" ;
+		bpt:hasGlobalIdIfcRoot		"3LTXDjeBzEl8P4qHCBEf9q" ;
+		bpt:hasBatID				"360271" ;
+		bpt:hasName					"RoofSlab" 
+		;
+		bpt:isExterior				"True" ;		
+		bpt:hasThickness			"400" ;			
+		bpt:hasThermalResistance	"6" .
+		
+OF:slab_f27649ff-6b90-4736-ab52-98da77a13d7f
+        a                           beo:Slab , beo:Slab-FLOOR, bot:Element , bop:FeatureOfInterest;
+
+		bpt:hasGUID					"f27649ff-6b90-4736-ab52-98da77a13d7f" ;
+		bpt:hasGlobalIdIfcRoot		"3oTad$Qv17DgjIcDfteJr$" ;
+		bpt:hasBatID				"351742" ;
+		bpt:hasName					"FloorSlab" ;
+		
+		bpt:isExterior				"False" ;		
+		bpt:hasThickness			"400" ;			
+		bpt:hasThermalResistance	"4.5" .
+		
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# INTERFACES
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:Interface1
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a1272d ;
+		bpt:hasArea					"16.30" .
+
+OF:Interface2
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a12828 ;
+		bpt:hasArea					"4.61" .
+
+OF:Interface3
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:window_f27649ff-6b90-4736-ab52-98da77a10428 ;
+		bpt:hasArea					"1.95" .
+
+OF:Interface4
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:window_f27649ff-6b90-4736-ab52-98da77a10348 ;
+		bpt:hasArea					"1.95" .
+
+OF:Interface5
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a13868 ;
+		bpt:hasArea					"0.26" .
+
+OF:Interface6
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:window_f27649ff-6b90-4736-ab52-98da77a10020 ;
+		bpt:hasArea					"3.64" .
+		
+OF:Interface7
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:window_f27649ff-6b90-4736-ab52-98da77a10075 ;
+		bpt:hasArea					"3.64" .
+		
+OF:Interface8
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a13832 ;
+		bpt:hasArea					"0.26" .
+		
+OF:Interface9
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:door_f27649ff-6b90-4736-ab52-98da77a102c3 ;
+		bpt:hasArea					"2.86" .
+		
+OF:Interface10
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:window_f27649ff-6b90-4736-ab52-98da77a101d5 ;
+		bpt:hasArea					"2.86" .	
+
+OF:Interface11
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a12bfa ;
+		bpt:hasArea					"0.78" .	
+		
+OF:Interface12
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a12df4 ;
+		bpt:hasArea					"17.04" .	
+		
+OF:Interface13
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:door_f27649ff-6b90-4736-ab52-98da77a13e77 ;
+		bpt:hasArea					"2.19" .	
+		
+OF:Interface14
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:window_f27649ff-6b90-4736-ab52-98da77a13fe7 ;
+		bpt:hasArea					"0.44" .	
+		
+OF:Interface15
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a1355f ;
+		bpt:hasArea					"4.72" .	
+		
+OF:Interface16
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a13770 ;
+		bpt:hasArea					"0.52" .			
+
+OF:Interface17
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:door_61646be3-03b9-4e10-b7f8-e8a8968e7656 ;
+		bpt:hasArea					"2.19" .	
+
+OF:Interface18
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a13351 ;
+		bpt:hasArea					"8.81" .	
+		
+OF:Interface19
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:door_f27649ff-6b90-4736-ab52-98da77a13911 ;
+		bpt:hasArea					"2.19" .	
+
+OF:Interface20
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:door_f27649ff-6b90-4736-ab52-98da77a13a9b ;
+		bpt:hasArea					"2.19" .	
+
+OF:Interface21
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:door_f27649ff-6b90-4736-ab52-98da77a13af5 ;
+		bpt:hasArea					"2.19" .	
+
+OF:Interface22
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:wall_f27649ff-6b90-4736-ab52-98da77a13397 ;
+		bpt:hasArea					"9.05" .			
+
+OF:Interface23
+		a							bot:Interface , bop:FeatureOfInterest ;
+		bot:interfaceOf				OF:LivingRoom , OF:door_61646be3-03b9-4e10-b7f8-e8a8968e77bd ;
+		bpt:hasArea					"2.19" .	
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# ACTUATORS
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4f2fc
+        a                          mep:FlowTerminal , mep:LED , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4f2fc" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzFBy" ;
+		bpt:hasBatID				"414455" ;
+		bpt:hasName					"BathroomMirrorLED" .
+
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4c5fb
+        a                          mep:FlowTerminal , mep:Halogen , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4c5fb" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzCNx" ;
+		bpt:hasBatID				"419312" ;
+		bpt:hasName					"BathroomHalogenLamp" .
+
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4e4dd
+        a                          mep:FlowTerminal , mep:Halogen , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4e4dd" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzEJT" ;
+		bpt:hasBatID				"410838" ;
+		bpt:hasName					"StudyHalogenLamp" .
+		
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4c506
+        a                          mep:FlowTerminal , mep:Halogen , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4c506" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzCK6" ;
+		bpt:hasBatID				"419085" ;
+		bpt:hasName					"ToiletHalogenLamp" .
+
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f48317
+        a                          mep:FlowTerminal , mep:LED , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f48317" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXz8CN" ;
+		bpt:hasBatID				"402204" ;
+		bpt:hasName					"LivingRoomStandingLED" .
+		
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4f233
+        a                          mep:FlowTerminal , mep:LED , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4f233" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzF8p" ;
+		bpt:hasBatID				"414264" ;
+		bpt:hasName					"BedroomLED" .
+		
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f49778
+        a                          mep:FlowTerminal , mep:Halogen , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f49778" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXz9Tu" ;
+		bpt:hasBatID				"407411" ;
+		bpt:hasName					"BalconyHalogenLamp" .
+	
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4e263
+        a                          mep:FlowTerminal , mep:Halogen , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4e263" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzE9Z" ;
+		bpt:hasBatID				"410216" ;
+		bpt:hasName					"HallHalogenLamp" .
+
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4f150
+        a                          mep:FlowTerminal , mep:LED , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4f150" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzF5G" ;
+		bpt:hasBatID				"414043" ;
+		bpt:hasName					"LivingRoomFloorLED" .
+		
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4e493
+        a                          mep:FlowTerminal , mep:Halogen , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4e493" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzEIJ" ;
+		bpt:hasBatID				"410776" ;
+		bpt:hasName					"StudyHalogenLamp2" .
+
+OF:flowterminal_5630b3e6-fb91-4ca6-905d-5e7761f4f320
+        a                          mep:FlowTerminal , mep:LED , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasGUID					"5630b3e6-fb91-4ca6-905d-5e7761f4f320" ;
+		bpt:hasGlobalIdIfcRoot		"1MCBFc_v5Cff1TNdTXzFCW" ;
+		bpt:hasBatID				"414507" ;
+		bpt:hasName					"KitchenLED" .
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# SENSORS
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:SeeedGroveAirQualitySensorV1_3
+		a							mep:Sensor , mep:Sensor-CO2SENSOR , mep:Sensor-SMOKESENSOR , bot:Element , bop:FeatureOfInterest ;
+		
+		bpt:hasName					"SeeedGroveAirQualitySensorV1_3" ;
+		
+		bop:observes				OF:LivingRoomAirQuality ;
+		bop:isHostedBy				OF:KitchenTable .
+
+OF:SeeedTemperatureAndHumiditySensorDHT11
+		a							mep:Sensor , mep:Sensor-TEMPERATURESENSOR , mep:Sensor-HUMIDITYSENSOR , bot:Element , bop:FeatureOfInterest ;
+
+		bpt:hasName					"SeeedTemperatureAndHumiditySensorDHT11" ;
+		
+		bop:observes				OF:LivingRoomTemperature , OF:LivingRoomRelativeHumidity ;
+		bop:isHostedBy				OF:KitchenTable .
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# DYNAMIC PROPERTIES
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:LivingRoomTemperature
+		a							bop:Property , bpt:Temperature , quantitykind:Temperature ;
+		bop:isPropertyOf			OF:LivingRoom ;
+		bop:hasPropertyState		OF:LivingRoomTemperatureDataPoint .
+		
+OF:LivingRoomRelativeHumidity
+		a							bop:Property , bpt:RelativeHumidity , quantitykind:RelativeHumidity ;
+		bop:isPropertyOf			OF:LivingRoom ;
+		bop:hasPropertyState		OF:LivingRoomRelativeHumidityDataPoint .
+
+OF:LivingRoomAirQuality
+		a							bop:Property , bpt:AirQuality ;
+		bop:isPropertyOf			OF:LivingRoom ;
+		bop:hasPropertyState		OF:LivingRoomAirQualityDataPoint .
+
+
+
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+# DATABASE
+################################################################################################################################################################################################################################
+################################################################################################################################################################################################################################
+
+OF:OpenFlatDB
+		a							bop:Database ;
+		bop:hasDataPoint			OF:LivingRoomTemperatureDataPoint , OF:LivingRoomRelativeHumidityDataPoint , OF:LivingRoomAirQualityDataPoint .	
