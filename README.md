@@ -21,6 +21,10 @@
 - [Comunica web client with the OpenFlat](https://query.comunica.dev/#datasources=https%3A%2F%2Fraw.githubusercontent.com%2FAlexDonkers%2Fofo%2Fmain%2FSWJ_Resources%2FOpenFlat%2FOpenFlat_Donkers.ttl&query=PREFIX%20bot%3A%20%3Chttps%3A%2F%2Fw3id.org%2Fbot%23%3E%0Aselect%20*%20where%20%7B%0A%20%20%20%20%3Fs%20%3Fp%20bot%3ABuilding%20.%0A%7D%20limit%20100)
 - [Comunica web client with the OpenFlat and the OpenSmartHome](https://query.comunica.dev/#datasources=https%3A%2F%2Fraw.githubusercontent.com%2FAlexDonkers%2Fofo%2Fmain%2FSWJ_Resources%2FOpenFlat%2FOpenFlat_Donkers.ttl;https%3A%2F%2Fraw.githubusercontent.com%2FAlexDonkers%2FOpenSmartHome%2Fmain%2FopenSmartHome_Donkers.ttl&query=PREFIX%20bot%3A%20%3Chttps%3A%2F%2Fw3id.org%2Fbot%23%3E%0Aselect%20*%20where%20%7B%0A%20%20%20%20%3Fs%20%3Fp%20bot%3ABuilding%20.%0A%7D%20limit%20100)
 
+## SPARQL Endpoints
+- [Public SPARQL endpoint of the city of Florence](https://opendata.comune.fi.it/content/sparql)
+- [DBpedia SPARQL endpoint](https://dbpedia.org/sparql)
+
 ## Frontend tools
 - [LD-BIM](https://ld-bim.web.app/)
 - [LBDviz](https://alexdonkers.github.io/LBDviz/dist/)
