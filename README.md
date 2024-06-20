@@ -34,7 +34,9 @@
 - [01_Check python version](https://colab.research.google.com/github/AlexDonkers/RUB-IIB-Workshops-2024/blob/main/01_CheckPythonInstallation.ipynb)
 - [02_RDFlib](https://colab.research.google.com/github/AlexDonkers/RUB-IIB-Workshops-2024/blob/main/02_RDFlib.ipynb)
 - [03_SPARQLWrapper](https://colab.research.google.com/github/AlexDonkers/RUB-IIB-Workshops-2024/blob/main/03_SPARQLWrapper.ipynb)
+- [04_RDFlib + python variables](https://colab.research.google.com/github/AlexDonkers/RUB-IIB-Workshops-2024/blob/main/04_RDFlib-plus-python-variables.ipynb)
 
 ## LBDviz
 - [LBDviz](https://alexdonkers.github.io/LBDviz/dist/)
 - [Tutorial](https://github.com/AlexDonkers/Frontends-and-LBD/)
+- [A Visual Support Tool for Decision-Making over Federated Building Information](https://link.springer.com/chapter/10.1007/978-3-031-37189-9_32)
