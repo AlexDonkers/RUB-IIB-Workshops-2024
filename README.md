@@ -9,7 +9,7 @@
 - Visual Studio Code
 - [Long list of handy LBD tools](https://github.com/SSoLDAC2024/Tools-and-handy-documents)
 
-# Workshop Linked Building Data and interactive frontends
+# Linked Building Data and interactive frontends
 
 ## GraphDB
 - Run GraphDB
